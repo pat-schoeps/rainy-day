@@ -1,0 +1,49 @@
+.Rain-Container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .inner-rain-container {
+    will-change: transform;
+    transform: translateY(-2000px);
+  }
+
+  #rain-top-layer {
+    animation: fall 4s infinite linear;
+    opacity: .6;
+  }
+
+  #rain-bottom-layer {
+    animation: fall 6s infinite linear;
+    animation-delay: 2s;
+    opacity: .8;
+  }
+
+  #rain-top-layer-2 {
+    animation: fall 4s infinite linear;
+    animation-delay: 2s;
+    opacity: .6;
+  }
+
+  #rain-bottom-layer-2 {
+    animation: fall 6s infinite linear;
+    opacity: .8;
+  }
+
+
+
+  .drop {
+    position: absolute;
+    //background: $dropColor;
+    background: white;
+    border-radius: 1px;
+    opacity: .3;
+  }
+}
+
+@keyframes fall {
+  
+  100% {
+    transform: translateY(1000px);
+  }
+}

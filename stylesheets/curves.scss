@@ -1,0 +1,12 @@
+.Page-Curves {
+  background: linear-gradient($darkBlue, $skyBlue);
+  overflow: hidden;
+  position: relative;
+
+  img.curves {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .6;
+  }
+}
